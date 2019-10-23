@@ -18,3 +18,18 @@ Route::get('/', function () {
 Auth::routes(['verify' => true]);
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+
+
+
+//  _______ _______  ______ _______ ______
+// (_______)_______)/ _____)_______) _____)
+//     _    _____  ( (____     _  ( (____
+//    | |  |  ___)  \____ \   | |  \____ \
+//    | |  | |_____ _____) )  | |  _____) )
+//    |_|  |_______)______/   |_| (______/
+//
+Route::get('/', function () {
+    return 'OK verifié';
+})->middleware('verified');
