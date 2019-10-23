@@ -17,6 +17,7 @@ class CreateAgresTable extends Migration
             $table->bigIncrements('id');
             $table->string('name');
             $table->string('description');
+            $table->string('shortname');
             $table->integer('genre_id')->unsigned();
             $table->timestamps();
 
