@@ -1,0 +1,70 @@
+id;num;nom;agres_id;difficulte;famille_id;envol;accro;BI;BS
+1;1; Placement du dos jambes groupée;1;0.1;1;0;;0;0
+2;2; Départ fente ATR retour fente;1;0.1;1;0;;0;0
+3;3; De l'appui dorsal 1/2 tour à l'appui facial (et inversement);1;0.1;1;0;;0;0
+4;4; Placement du dos jambes tendues à l'horizontale;1;0.2;1;0;;0;0
+5;5; Equerre serrée tenue 2";1;0.2;1;0;;0;0
+6;8; Départ fente ATR tenu 2";1;0.3;1;0;;0;0
+7;9; Toutes les balances (planches) au moins à l'horizontale;1;0.3;1;0;;0;0
+8;10; ATR 1/2 tour;1;0.3;1;0;;0;0
+9;11;Y 135 degrés minimum;1;0.3;1;0;;0;0
+10;12; Healy;1;0.3;1;0;;0;0
+11;13; Equerre écartée mains entre les jambes tenue 2";1;0.3;2;0;;0;0
+12;15; De l'ATR descendre à l'équerre écartée ou serrée, tenue 2 ";1;0.4;2;0;;0;0
+13;16; De la station jambes écartées monter en force;1;0.4;2;0;;0;0
+14;17; De la position couchée faciale, s'élever à l'appui renversé;1;0.4;2;0;;0;0
+15;18;ATR demi tour;1;0.4;2;0;;0;0
+16;19; Toutes les balances écart 180° sans les mains tenue 2";1;0.4;2;0;;0;0
+17;20; Appui facial horizontal jambes écartées tenu 2";1;0.4;2;0;;0;0
+18;21; Rouler écart à l'ATR tenu 2";1;0.4;2;0;;0;0
+19;37; Écrasement facial tenu 2";1;0.1;4;0;;0;0
+20;40; Grand écart latéral tenu 2";1;0.2;4;0;;0;0
+21;41; Grand écart facial tenu;1;0.2;4;0;;0;0
+22;42; Pont tenu 2 sec.;1;0.2;4;0;;0;0
+23;43; Souplesse arrière;1;0.3;4;0;;0;0
+24;46; Souplesse avant;1;0.4;4;0;;0;0
+25;47; Menichelli station couché dorsal, une jambe fléchie,;1;0.4;4;0;;0;0
+26;49; Roulade avant groupée avec appui des mains et bras tendus;1;0.1;5;0;;0;0
+27;50; Roulade avant jambes écartées avec appui des mains et bras tendus;1;0.1;5;0;;0;0
+28;52; Roulade avant élevée;1;0.2;5;1;;0;0
+29;53; Départ fente, ATR roulade avant bras tendus;1;0.2;5;0;;0;0
+30;54;Rondade;1;0.2;5;1;;0;0
+31;55;Roulade avant jambes tendues serrées avec appui des mains et bras tendus;1;0.2;5;0;;0;0
+32;57; Roue ou roue pied/pied;1;0.2;5;0;;0;0
+33;58;Saut en arrière avec 1/2 tour et saut de poisson;1;0.3;5;1;;0;0
+34;60; Saut de mains;1;0.3;5;1;;0;0
+35;61;Saut de poisson;1;0.3;6;1;;0;0
+36;62; Salto avant groupé ou carpé;1;0.3;6;1;;0;0
+37;64; Saut en arrière avec 1/2 tour et salto avant groupé ou carpé;1;0.4;6;1;;0;0
+38;65; Saut de mains à l'appui couché facial;1;0.4;6;1;;0;0
+39;66; Salto avant avec une jambe écartée;1;0.4;6;1;;0;0
+40;67;Flip Avant;1;0.4;6;1;;0;0
+41;85; Roulade arrière groupée bras tendus;1;0.1;8;0;;0;0
+42;86; Roulade arrière jambes écartées bras tendus;1;0.1;8;0;;0;0
+43;88; Roulade arrière jambes tendues bras tendus;1;0.2;8;0;;0;0
+44;91; Roulade arrière bras tendus à l'ATR passagé;1;0.3;8;0;;0;0
+45;92;Flip Arriere;1;0.3;8;1;;0;0
+46;93; Salto arrière groupé, carpé;1;0.3;8;1;;0;0
+47;94; Salto arrière tendu;1;0.4;8;1;;0;0
+48;95; Roulade arrière bras tendus à l'ATR tenu 2";1;0.4;8;0;;0;0
+49;96; Roulade arrière bras tendus 1/2 à l'ATR;1;0.4;8;0;;0;0
+50;97; Salto arrière tempo;1;0.4;9;1;;0;0
+51;98; Tous salti arrière avec 1/2 tour;1;0.4;9;1;;0;0
+52;100; Tous salti arrière avec 1 tour;1;0.5;9;1;;0;0
+53;110; Salto avant costal;1;0.3;10;1;;0;0
+54;112;Salto latéral jambes groupées écartées;1;0.4;10;1;;0;0
+55;121; Saut extension;1;0.1;11;1;;0;0
+56;122; Saut extension 1/2 tour;1;0.1;11;1;;0;0
+57;124; Saut carpé jambes écartées ou serrées;1;0.2;11;1;;0;0
+58;125; Saut 1 tour ou 1 tour sur une jambe;1;0.2;11;1;;0;0
+59;127;Saut ciseau;1;0.2;11;1;;0;0
+60;128; Saut de biche;1;0.2;11;1;;0;0
+61;130; Saut 1 tour 1/2 ou 1 tour 1/2 sur une jambe;1;0.2;11;1;;0;0
+62;131; Cercle des jambes 360°;1;0.3;11;0;;0;0
+63;132; Saut extension avec demi tour à l'appui couché ou facial ;1;0.3;11;1;;0;0
+64;133; Saut 2 tours et plus ou 2 tours et plus sur une jambe;1;0.4;12;1;;0;0
+65;135; Saut par renversement arrière à l'appui couché ou facial;1;0.4;12;1;;0;0
+66;136;Papillon;1;0.4;12;1;;0;0
+67;137; Variante de breakdance;1;0.4;12;0;;0;0
+68;139; Cercle des jambes serrées ou écartées (540° ou +);1;0.4;12;0;;0;0
+69;142; Cercle des jambes écartées avec 1/2 pivot (sens inverse du cercle);1;0.4;12;0;;0;0
