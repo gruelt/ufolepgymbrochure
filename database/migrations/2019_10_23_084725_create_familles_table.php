@@ -17,7 +17,7 @@ class CreateFamillesTable extends Migration
             $table->bigIncrements('id');
             $table->string('nom');
             $table->timestamps();
-
+            $table->string('image')->nullable();
             $table->foreignId('agres_id')->constrained();
         });
     }

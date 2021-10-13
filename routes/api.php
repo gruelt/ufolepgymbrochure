@@ -16,3 +16,11 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+
+// Resources
+Route::resource('agres',AgresController::class);
+Route::resource('genres',GenreController::class);
+Route::resource('familles',FamilleController::class);
+Route::resource('elements',ElementController::class);
+

@@ -22,6 +22,7 @@ class CreateElementsTable extends Migration
             $table->boolean('accro')->nullable();
             $table->boolean('BI')->comment('Barre Inférieure');
             $table->boolean('BS')->comment('Barre Supérieure');
+            $table->string('image')->nullable();
 
             $table->timestamps();
 

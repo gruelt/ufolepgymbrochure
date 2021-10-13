@@ -18,7 +18,7 @@ class CreateAgresTable extends Migration
             $table->string('name');
             $table->string('description');
             $table->string('shortname');
-
+            $table->string('image')->nullable();
             $table->timestamps();
 
             $table->foreignId('genre_id')->constrained();
