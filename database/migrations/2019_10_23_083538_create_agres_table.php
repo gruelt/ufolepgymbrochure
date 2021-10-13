@@ -18,12 +18,10 @@ class CreateAgresTable extends Migration
             $table->string('name');
             $table->string('description');
             $table->string('shortname');
-            $table->integer('genre_id')->unsigned();
+
             $table->timestamps();
 
-            $table->foreign('genre_id')->references('id')->on('genres')
-                ->onDelete('restrict')
-                ->onUpdate('restrict');
+            $table->foreignId('genre_id')->constrained();
 
 
 

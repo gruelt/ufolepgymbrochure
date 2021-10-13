@@ -16,12 +16,9 @@ class CreateFamillesTable extends Migration
         Schema::create('familles', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('nom');
-            $table->integer('agres_id')->unsigned();
             $table->timestamps();
 
-            $table->foreign('agres_id')->references('id')->on('agres')
-                ->onDelete('restrict')
-                ->onUpdate('restrict');
+            $table->foreignId('agres_id')->constrained();
         });
     }
 
