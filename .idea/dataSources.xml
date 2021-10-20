@@ -16,5 +16,12 @@
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
       <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/../db/brochure.sqlite</jdbc-url>
     </data-source>
+    <data-source source="LOCAL" name="RDSMysql" uuid="54d32504-510c-40e3-8443-e64bf933193b">
+      <driver-ref>mysql_aurora</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.mariadb.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mariadb://brochure.cluster-csmenqb9vgsh.eu-west-3.rds.amazonaws.com:3306/brochure</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
   </component>
 </project>
