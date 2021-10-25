@@ -65,7 +65,7 @@
 
         <div class="header">
             <div class="title">{{ config('app.name', 'Laravel') }}</div>
-            <div class="subtitle">Because Subtitle is everything</div>
+            <div class="subtitle">Brochure 2020/2021</div>
             <b-img src="https://ufolepbrochure.s3.eu-west-3.amazonaws.com/agres/anneaux.png" width="75" center alt="Responsive image"></b-img>
 
         </div>

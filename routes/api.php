@@ -19,8 +19,18 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 
 // Resources
-Route::resource('agres',AgresController::class);
-Route::resource('genres',GenreController::class);
-Route::resource('familles',FamilleController::class);
-Route::resource('elements',ElementController::class);
+
+
+Route::resource('agres',AgresAPIController::class);
+Route::resource('agres.elements',AgresElementAPIController::class);
+Route::resource('agres.familles',AgresFamilleAPIController::class);
+
+
+Route::resource('genres',GenreAPIController::class);
+
+
+Route::resource('familles',FamilleAPIController::class);
+
+
+Route::resource('elements',ElementAPIController::class);
 

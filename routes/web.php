@@ -22,6 +22,20 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 
 
+Route::resource('agres',AgresController::class);
+Route::resource('agres.elements',AgresElementController::class);
+Route::resource('agres.familles',AgresFamilleController::class);
+
+
+
+
+
+
+
+
+
+
+
 
 //  _______ _______  ______ _______ ______
 // (_______)_______)/ _____)_______) _____)
@@ -30,9 +44,14 @@ Route::get('/home', 'HomeController@index')->name('home');
 //    | |  | |_____ _____) )  | |  _____) )
 //    |_|  |_______)______/   |_| (______/
 //
-Route::get('/', function () {
+Route::get('/verified', function () {
     return 'OK verifié';
 })->middleware('verified');
+
+
+
+
+
 
 
 Route::group(['prefix' => 'admin'], function () {
