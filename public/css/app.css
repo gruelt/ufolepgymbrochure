@@ -11442,7 +11442,7 @@ body {
 .header {
   background: #EC4546;
   color: white;
-  padding: 20px 50px 110px;
+  padding: 20px 20px 20px;
   position: relative;
 }
 
@@ -11469,5 +11469,24 @@ a.nav-link {
   font-family: Roboto;
   text-decoration: none;
   background-color: transparent;
+}
+
+.agres.title {
+  margin: 10px;
+  color: white;
+  text-align: left;
+  font-family: "Roboto";
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.agres.link {
+  text-decoration: none;
+  margin: 10px;
+  color: white;
+  text-align: left;
+  font-family: "Roboto";
+  font-size: 30px;
+  font-weight: bold;
 }
 

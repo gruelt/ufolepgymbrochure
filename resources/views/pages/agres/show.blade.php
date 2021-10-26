@@ -1,33 +1,27 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-                <div class="card">
-                    <div class="card-header">Dashboard</div>
-
-                    <div class="card-body">
-                        @if (session('status'))
-                            <div class="alert alert-success" role="alert">
-                                {{ session('status') }}
-                            </div>
-                        @endif
 
 
-                        <div>
 
-                            <b-row>
 
-                                {{$agres}}
+
+                            <b-row style="background-color: {{$agres->color}}">
+
+                                        <b-col >
+
+                                            <img src="https://ufolepbrochure.s3.eu-west-3.amazonaws.com/{{$agres->image}}" width="75"  alt="Responsive image"></img>
+
+                                        </b-col>
+
+                                    <b-col >{{$agres->description}}</b-col>
 
                             </b-row>
-                        </div>
+
+                           <b-row> <b-table striped hover :items="{{json_encode($elements)}}"></b-table></b-row>
 
 
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+
+
+
 @endsection

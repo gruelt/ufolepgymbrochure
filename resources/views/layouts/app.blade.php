@@ -63,18 +63,18 @@
             </b-nav>
         </div>
 
-        <div class="header">
+        <div class="header" >
             <div class="title">{{ config('app.name', 'Laravel') }}</div>
-            <div class="subtitle">Brochure 2020/2021</div>
+            <div class="subtitle">{{$title}}</div>
             <b-img src="https://ufolepbrochure.s3.eu-west-3.amazonaws.com/agres/anneaux.png" width="75" center alt="Responsive image"></b-img>
 
         </div>
 
 
 
-        <main class="py-4">
+        <b-container>
             @yield('content')
-        </main>
+        </b-container>
     </div>
 </body>
 </html>

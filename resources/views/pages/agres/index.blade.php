@@ -1,36 +1,24 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-                <div class="card">
-                    <div class="card-header">Dashboard</div>
-
-                    <div class="card-body">
-                        @if (session('status'))
-                            <div class="alert alert-success" role="alert">
-                                {{ session('status') }}
-                            </div>
-                        @endif
 
 
-                            <div>
+                            <b-row v-for="agre in {{json_encode($agres)}}" :style="'background-color:' + agre.color" :href="'/agres/'+agre.id">
 
-                                <b-row>
-                                    <b-col cols="6">
-                                    <div v-for="agre in {{json_encode($agres)}}" :style="'color:white;padding:40px;margin:5px;background-color:'+agre.color">
+                                <b-col >
 
-                                            <H2><a :href="'agres/'+agre.id"><span v-html="agre.description"></span></a></H2>
-                                    </div>
-                                    </b-col>
-                                </b-row>
-                            </div>
+                                    <img :src="'https://ufolepbrochure.s3.eu-west-3.amazonaws.com/' + agre.image" width="75"  center alt="Responsive image" :href="'/agres/'+agre.id"></img>
+
+                                </b-col>
+
+                                <b-col v-html="agre.description" class="agres title"></b-col>
+
+                                <b-col><b-link :href="'/agres/'+agre.id" class="agres link"> > </b-link></b-col>
+
+                            </b-row>
 
 
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+
+
+
 @endsection
