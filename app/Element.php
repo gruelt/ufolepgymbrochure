@@ -12,4 +12,9 @@ class Element extends Model
         return $this->belongsTo(Agres::class);
     }
 
+    public function famille()
+    {
+        return $this->belongsTo(Famille::class);
+    }
+
 }

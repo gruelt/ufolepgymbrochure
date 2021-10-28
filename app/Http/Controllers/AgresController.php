@@ -57,7 +57,9 @@ class AgresController extends Controller
         $title = $agres->name;
 
 
-        $elements=Agres::find($id)->elements()->get();
+        $elements=Agres::find($id)->elements()->get()->load('famille');
+
+
 
         return view('pages.agres.show')->with(compact('agres','title','elements'));
     }

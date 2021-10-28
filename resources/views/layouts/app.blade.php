@@ -65,14 +65,14 @@
 
         <div class="header" >
             <div class="title">{{ config('app.name', 'Laravel') }}</div>
-            <div class="subtitle">{{$title}}</div>
+            @IF( isset($title) )<div class="subtitle">{{$title}}</div>@endif
             <b-img src="https://ufolepbrochure.s3.eu-west-3.amazonaws.com/agres/anneaux.png" width="75" center alt="Responsive image"></b-img>
 
         </div>
 
 
 
-        <b-container>
+        <b-container fluid>
             @yield('content')
         </b-container>
     </div>

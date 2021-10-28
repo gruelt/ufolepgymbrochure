@@ -5,7 +5,7 @@
 
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-8">
+        <div class="col-md-12">
             <div class="card">
                 <div class="card-header">Dashboard</div>
 
@@ -17,6 +17,10 @@
                     @endif
 
                     {{$title}}
+                    <b-button block href="/agres">Agres</b-button>
+                    <b-button block href="/elements">Elements</b-button>
+                    <b-button block href="/familles">Familles</b-button>
+
 
 
 

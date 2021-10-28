@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('auth.login');
 });
 
 Auth::routes(['verify' => true]);
@@ -25,6 +25,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::resource('agres',AgresController::class);
 Route::resource('agres.elements',AgresElementController::class);
 Route::resource('agres.familles',AgresFamilleController::class);
+
 
 
 

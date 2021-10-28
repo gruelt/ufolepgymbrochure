@@ -6,7 +6,7 @@
 
 
 
-                            <b-row style="background-color: {{$agres->color}}">
+                            <b-row style="background-color: {{$agres->color}};" class="title">
 
                                         <b-col >
 
@@ -14,11 +14,16 @@
 
                                         </b-col>
 
-                                    <b-col >{{$agres->description}}</b-col>
-
+                                <b-col ><div class="white_title" >{{$agres->description}}</div></b-col>
+                                <b-col><b-button variant="success" squared href="{{route('agres.elements.create',$agres->id)}}">+</b-button></b-col>
                             </b-row>
 
-                           <b-row> <b-table striped hover :items="{{json_encode($elements)}}"></b-table></b-row>
+                            <elements-table :elements="{{json_encode($elements)}}"></elements-table>
+
+                           <b-row>
+{{--                               <b-table striped hover :items="{{json_encode($elements)}}">--}}
+
+                               </b-table></b-row>
 
 
 

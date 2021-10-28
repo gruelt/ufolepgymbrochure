@@ -11471,7 +11471,7 @@ a.nav-link {
   background-color: transparent;
 }
 
-.agres.title {
+.agres.title .white_title {
   margin: 10px;
   color: white;
   text-align: left;
@@ -11486,6 +11486,14 @@ a.nav-link {
   color: white;
   text-align: left;
   font-family: "Roboto";
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.title {
+  font-family: Roboto;
+  padding-top: 15px;
+  color: white;
   font-size: 30px;
   font-weight: bold;
 }
