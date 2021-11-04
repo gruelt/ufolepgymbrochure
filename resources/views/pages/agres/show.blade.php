@@ -18,7 +18,7 @@
                                 <b-col><b-button variant="success" squared href="{{route('agres.elements.create',$agres->id)}}">+</b-button></b-col>
                             </b-row>
 
-                            <elements-table :elements="{{json_encode($elements)}}"></elements-table>
+                            <elements-table :elements="{{json_encode($elements)}}" :agres="{{$agres->id}}"></elements-table>
 
                            <b-row>
 {{--                               <b-table striped hover :items="{{json_encode($elements)}}">--}}

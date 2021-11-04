@@ -35,7 +35,9 @@ class AgresElementController extends Controller
             'url' => route('agres.elements.store',$agres_id)
         ]);
 
-        return view('forms.element')->with(compact('agres','form'));
+        $back_url = route('agres.show',$agres_id);
+
+        return view('forms.element')->with(compact('agres','form','back_url'));
     }
 
     /**
@@ -78,9 +80,10 @@ class AgresElementController extends Controller
         $element->num =  $request->num;
         $element->difficulte = $request->difficulte;
         $element->nom = $request->nom;
-        $element->envol = $request->envol;
-        $element->BI = $request->BI;
-        $element->BS = $request->BS;
+        $element->accro = $request->accro ? true : false;
+        $element->envol = $request->envol ? true : false;
+        $element->BI = $request->BI ? true : false ;
+        $element->BS = $request->BS ? true : false;
         $element->agres_id = $agre;
         $element->famille_id = $request->famille_id;
         if($request->hasFile('image'))
@@ -101,9 +104,11 @@ class AgresElementController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show($element_id)
     {
-        //
+        $element = Element::find($element_id);
+
+        return $element;
     }
 
     /**
@@ -112,9 +117,23 @@ class AgresElementController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(FormBuilder $formBuilder,$agres_id,$element_id)
     {
-        //
+        $agres = Agres::find($agres_id);
+
+        $element = Element::find($element_id);
+
+        $form = $formBuilder->create(ElementForm::class, [
+            'method' => 'POST',
+            'model' => $element,
+            'url' => route('agres.elements.store',$agres_id)
+        ]);
+
+        $image ="<img src='https://ufolepbrochure.s3.eu-west-3.amazonaws.com/$element->image' width='350'  alt='Responsive image'>";
+
+        $back_url = route('agres.show',$agres_id);
+
+        return view('forms.element')->with(compact('agres','form','image','back_url'));
     }
 
     /**

@@ -18,6 +18,10 @@
                 </a>
             </template>
 
+            <template #cell(action)="data">
+                <b-button variant="info" :href="'/agres/'+ agres +'/elements/'+ data.item.id + '/edit'">Editer</b-button>
+            </template>
+
 
 
 
@@ -31,7 +35,8 @@ export default {
     name: "elements-table",
     props: {
         title: String,
-        elements: Array
+        elements: Array,
+        agres: Number
     },
     data() {
         return {
