@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Element;
+use App\Famille;
 use App\Forms\ElementForm;
 use Illuminate\Http\Request;
 use App\Agres;
@@ -32,8 +33,17 @@ class AgresElementController extends Controller
 
         $form = $formBuilder->create(ElementForm::class, [
             'method' => 'POST',
-            'url' => route('agres.elements.store',$agres_id)
-        ]);
+            'url' => route('agres.elements.store',$agres_id),
+            ''
+            ],
+            [
+                'familles' => $agres->familles()->pluck('nom','id')
+            ]
+
+        );
+
+
+
 
         $back_url = route('agres.show',$agres_id);
 
@@ -127,7 +137,11 @@ class AgresElementController extends Controller
             'method' => 'POST',
             'model' => $element,
             'url' => route('agres.elements.store',$agres_id)
-        ]);
+        ],
+            [
+                'familles' => $agres->familles()->pluck('nom','id')
+            ]
+        );
 
         $image ="<img src='https://ufolepbrochure.s3.eu-west-3.amazonaws.com/$element->image' width='350'  alt='Responsive image'>";
 
