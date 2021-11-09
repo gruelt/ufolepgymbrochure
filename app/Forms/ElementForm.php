@@ -10,8 +10,13 @@ class ElementForm extends Form
 
     public function buildForm()
     {
-            //dd($this->getModel()->famille_id);
+
             $familles = $this->getData('familles')->toArray();
+            $selected_famille_id = null;
+            if(isset($this->getModel()->famille_id))
+            {
+                $selected_famille_id = $this->getModel()->famille_id;
+            }
 
         $this->add('image', 'file')
             ->add('num', 'text')
@@ -20,7 +25,7 @@ class ElementForm extends Form
                 'select',
                 [
                     'choices' => $familles,
-                    'selected' => $this->getModel()->famille_id
+                    'selected' => $selected_famille_id
                 ]
             )
             ->add('nom', 'text')
