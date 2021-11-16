@@ -15,7 +15,7 @@ class AgresElementAPIController extends Controller
      */
     public function index($agres_id)
     {
-        return Agres::find($agres_id)->elements()->get();
+        return Agres::find($agres_id)->elements()->with('famille','agres')->get();
     }
 
     /**

@@ -14,7 +14,7 @@ class ElementAPIController extends Controller
      */
     public function index()
     {
-        $elements = Element::all();
+        $elements = Element::with('famille','agres')->get();
 
         return $elements;
     }
