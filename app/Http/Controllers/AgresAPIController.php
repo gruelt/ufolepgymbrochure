@@ -15,7 +15,7 @@ class AgresAPIController extends Controller
      */
     public function index()
     {
-        $agres = Agres::all();
+        $agres = Agres::where('active',1)->get();
 
         return $agres;
     }
