@@ -66,13 +66,13 @@ ENTRYPOINT ["/var/www/docker/run.sh"]
 
 
 
-#FROM node:14 as node_dependencies
-#WORKDIR /var/www
-#ENV PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=false
-#COPY --from=php_base /var/www /var/www
-#RUN npm install -f 
-#RUN npm run prod 
-#RUN rm -rf node_modules
-#FROM php_base
-#COPY --from=node_dependencies --chown=www:www-data /var/www /var/www
+FROM node:14 as node_dependencies
+WORKDIR /var/www
+ENV PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=false
+COPY --from=php_base /var/www /var/www
+RUN npm install -f 
+RUN npm run prod 
+RUN rm -rf node_modules
+FROM php_base
+COPY --from=node_dependencies --chown=www:www-data /var/www/public /var/www/public
 
