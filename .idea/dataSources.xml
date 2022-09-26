@@ -23,5 +23,12 @@
       <jdbc-url>jdbc:mariadb://brochure.cluster-csmenqb9vgsh.eu-west-3.rds.amazonaws.com:3306/brochure</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
+    <data-source source="LOCAL" name="@localhost" uuid="8bd4478d-4cdd-4bfb-b47d-1bcb13435412">
+      <driver-ref>mariadb</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.mariadb.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mariadb://localhost:3306</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
   </component>
 </project>
