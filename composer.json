@@ -9,7 +9,6 @@
     "license": "MIT",
     "require": {
         "php": "^8.1",
-        "fideloper/proxy": "^4.0",
         "fruitcake/laravel-cors": "^2.0",
         "kris/laravel-form-builder": "^1.40",
         "laravel/framework": "^9.0",
