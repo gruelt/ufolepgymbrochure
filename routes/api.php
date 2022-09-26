@@ -13,7 +13,11 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
+//Route::middleware('auth:api')->get('/user', function (Request $request) {
+//    return $request->user();
+//});
+
+Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
@@ -24,13 +28,9 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::resource('agres',AgresAPIController::class);
 Route::resource('agres.elements',AgresElementAPIController::class);
 Route::resource('agres.familles',AgresFamilleAPIController::class);
-
-
 Route::resource('genres',GenreAPIController::class);
-
-
 Route::resource('familles',FamilleAPIController::class);
-
-
 Route::resource('elements',ElementAPIController::class);
 
+//Auth Sanctum test
+//Route::get('/auth','Auth\TokenController@test');
